@@ -1,30 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pay Slip</title>
     <link rel="stylesheet" href="/dist/index.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap");
+
+        html {
+            font-size: 62.5%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+   </style>
+
+
 </head>
-<body>
-    <div class="container">
-        <div class="heading">
+
+<body style="font-family: 'Courier Prime', monospace;
+background-color: #ffffff;
+color: #333333;
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;">
+    <div class="container" style="background-color: #ffffff;
+    color: #333333;
+    width: 120rem;">
+        <div class="heading" style="display: flex;
+        justify-content: space-between;
+        margin-top: 10rem;">
             <div class="left">
                 <h1>ANDELA TALENT ACCELERATOR LIMITED </h1>
-                <h1>EMPLOYEE'S NAME: <span>Anjorin Samuel Olusegun</span></h1>
-                <h1>JOB TITLE: <span>Success Direct</span></h1>
+                <h1>EMPLOYEE'S NAME: <span style="color: #3a3838;
+                    font-weight: 400;">Anjorin Samuel Olusegun</span></h1>
+                <h1>JOB TITLE: <span style="color: #3a3838;
+                    font-weight: 400;">Success Direct</span></h1>
             </div>
-            <div class="right">
-                <h1>PAY SLIP FOR: <span>OCTOBER 2019</span></h1>
-                <h1>EMPLOYEE NUMBER: <span>2530</span></h1>
-                <h1>DESIGNATION: <span>Senior Software Engineer</span></h1>
+            <div class="right" style="display: grid;
+            grid-template-columns: 1fr;
+            width: 80rem;
+            text-align: end;
+            font-weight: 700;">
+                <h1>PAY SLIP FOR: <span style="color: #3a3838;
+                    font-weight: 400;">OCTOBER 2019</span></h1>
+                <h1>EMPLOYEE NUMBER: <span style="color: #3a3838;
+                    font-weight: 400;">2530</span></h1>
+                <h1>DESIGNATION: <span style="color: #3a3838;
+                    font-weight: 400;">Senior Software Engineer</span></h1>
             </div>
         </div>
-        <hr>
-        <div class="first-section">
-            <div class="left">
-                <h1>ITEM EARNINGS</h1>
+        <hr style="box-sizing: border-box;
+        border: 2px solid #333333;
+        padding: 0;
+        margin: 1rem 0 0 0;">
+        <div class="first-section" style=" display: grid;
+        grid-template-columns: repeat(3, 1fr); font-size: 2rem;">
+            <div class="left" style=" text-align: left; width: 40rem;
+            ">
+                <h1 style="font-size: 2rem;">ITEM EARNINGS</h1>
                 <p>BASIC SALARY</p>
                 <p>HOUSING ALLOWANCE</p>
                 <p>TRANSPORT ALLOWANCE</p>
@@ -34,8 +72,8 @@
                 <p>STIPEND </p>
                 <p>SD BONUS </p>
             </div>
-            <div class="middle">
-                <h1>CURRENT MONTH</h1>
+            <div class="middle" style="text-align: center;">
+                <h1 style="font-size: 2rem; width: 40rem;">CURRENT MONTH</h1>
                 <p>266,112.00</p>
                 <p>199,584.00</p>
                 <p>66,528.00</p>
@@ -45,8 +83,8 @@
                 <p>147,029.70</p>
                 <p>216,000.00</p>
             </div>
-            <div class="right">
-                <h1>YEAR TO DATE</h1>
+            <div class="right" style="text-align: end; width: 40rem;">
+                <h1 style="font-size: 2rem;">YEAR TO DATE</h1>
                 <p>1,553,750.71</p>
                 <p>1,165,313.03</p>
                 <p>388,437.68</p>
@@ -55,45 +93,86 @@
                 <p>194,218.84</p>
                 <p>147,029.70</p>
                 <p>216,000.00</p>
-            </div>         
+            </div>
         </div>
-        <hr>
-        <div class="second-section">
-            <div class="left">                
-                <h1 class="bottom">GROSS PAY</h1>
-                <h1 class="deductions">DEDUCTIONS</h1>                
+        <hr style="box-sizing: border-box;
+        border: 2px solid #333333;
+        padding: 0;
+        margin: 1rem 0 0 0;">
+        <div class="second-section" style=" display: grid;
+        grid-template-columns: repeat(3, 1fr); font-size: 2rem;">
+            <div class="left" style="width: 40rem;">
+                <h1 class="bottom" style="padding: 0;
+                margin: 0; font-size: 2rem;">GROSS PAY</h1>
+                <h1 class="deductions" style="height: 2rem;
+                margin-top: 4rem; font-size: 2rem;">DEDUCTIONS</h1>
                 <p>PAYE TAX</p>
                 <p>PENSION</p>
                 <p>NHF</p>
             </div>
-            <div class="middle">
-                <h1 class="bottom">1,028,309.70</h1>
-                <h1 class="deductions"></h1>                
-                <p class="red-color">164,286.76</p>
-                <p class="red-color">42,577.92</p>
-                <p class="red-color">6,652.80</p>
+            <div class="middle" style="text-align: center; width: 40rem;">
+                <h1 class="bottom" style="padding: 0;
+                margin: 0; font-size: 2rem;">1,028,309.70</h1>
+                <h1 class="deductions" style="height: 2rem;
+                margin-top: 4rem;"></h1>
+                <p class="red-color" style=" color: red;">164,286.76</p>
+                <p class="red-color" style=" color: red;">42,577.92</p>
+                <p class="red-color" style=" color: red;">6,652.80</p>
             </div>
-            <div class="right">
-                <h1 class="bottom">4,247,406.48</h1>
-                <h1 class="deductions"></h1>              
-                <p class="red-color">618,515.55</p>
-                <p class="red-color">248,600.11</p>
-                <p class="red-color">38,843.77</p>
+            <div class="right" style="text-align: end; width: 40rem;">
+                <h1 class="bottom" style="padding: 0;
+                margin: 0; font-size: 2rem;">4,247,406.48</h1>
+                <h1 class="deductions" style="height: 2rem;
+                margin-top: 4rem;"></h1>
+                <p class="red-color" style=" color: red;">618,515.55</p>
+                <p class="red-color" style=" color: red;">248,600.11</p>
+                <p class="red-color" style=" color: red;">38,843.77</p>
             </div>
         </div>
-        <hr>
+        <hr style="box-sizing: border-box;
+        border: 2px solid #333333;
+        padding: 0;
+        margin: 1rem 0 0 0;">
         <div class="third-section">
-            <div class="bottom">
-                <h1 class="mgt">TOTAL DEDUCTION</h1>
-                <h1 class="red-color center mgt">213,517.48</h1>
-                <h1 class="red-color end mgt">905,959.43</h1>
+            <div class="bottom" style=" display: grid;
+            grid-template-columns: repeat(3, 1fr);">
+                <h1 class="mgt" style=" padding: 0;
+                margin: 0; width: 40rem;">TOTAL DEDUCTION</h1>
+                <h1 class="red-color center mgt" style=" padding: 0;
+                margin: 0; color: red; width: 40rem; text-align: center;">213,517.48</h1>
+                <h1 class="red-color end mgt" style=" padding: 0;
+                margin: 0; color: red; width: 40rem;text-align: right;">905,959.43</h1>
             </div>
-            <div class="net-payable">
-                <h1>NET PAYABLE</h1>
-                <p class="center">814,792.22</p>
-                <p class="end">3,341,447.05</p>
+            <div class="net-payable" style=" display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 4rem;
+            line-height: 4rem;
+            font-weight: 700;
+            margin-bottom: 10rem;">
+                <h1 class="net" style="width: 30rem;">NET PAYABLE</h1>
+                <p class="center" style="text-align: center; font-size: 2rem;
+                line-height: 2rem;
+                padding-top: 1rem;
+                margin: 0rem; text-align: center;
+  width: 30rem;
+  margin-left: 5rem;
+  background-color: rgb(239, 226, 226);
+  box-sizing: border-box;
+  border-bottom: 6px solid black;
+  border-top: 3px solid black;">814,792.22</p>
+                <p class="end" style="text-align: end; font-size: 2rem;
+                line-height: 2rem;
+                padding-top: 1rem;
+                margin: 0rem; text-align: end;
+  width: 30rem;
+  margin-left: 15rem;
+  background-color: rgb(239, 226, 226);
+  box-sizing: border-box;
+  border-bottom: 6px solid black;
+  border-top: 3px solid black;">3,341,447.05</p>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
+
 </html>
